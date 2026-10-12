@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 40px; border-bottom:1px solid #e5e7eb;">
+    <div style="display:flex; align-items:center; gap:8px; font-weight:bold;">
+      <div style="width:28px; height:28px; border:1px solid #ccc; border-radius:6px; display:flex; align-items:center; justify-content:center;">🐾</div>
+      Pawsitive Pet Academy
+    </div>
+    <div style="display:flex; gap:24px; font-size:14px;">
+      <a href="index.html" style="text-decoration:none; color:#666;">Home</a>
+      <a href="courses.html" style="text-decoration:none; color:#666;">Courses</a>
+      <a href="about.html" style="text-decoration:none; color:#666;">About Us</a>
+      <a href="contact.html" style="text-decoration:none; color:#111;font-weight:bold; border-bottom:2px solid #111; padding-bottom:2px;">Contact</a>
+      <a href="login.html" style="text-decoration:none; color:#666;">Login</a>
+      <a href="fees.html" style="text-decoration:none; color:#666;">Fees</a>
+    </div>
+  </div>
+
+    <h1>Contact Us</h1>
+    <p>If you have any questions or inquiries, please feel free to reach out to us using the contact form below or through the provided contact information.</p>
+    <form action="submit_contact.php" method="post">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="message">Message:</label><br>
+        <textarea id="message" name="message" rows="4" required></textarea><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

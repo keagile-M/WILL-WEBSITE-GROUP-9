@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 40px; border-bottom:1px solid #e5e7eb;">
+    <div style="display:flex; align-items:center; gap:8px; font-weight:bold;">
+      <div style="width:28px; height:28px; border:1px solid #ccc; border-radius:6px; display:flex; align-items:center; justify-content:center;">🐾</div>
+      Pawsitive Pet Academy
+    </div>
+    <div style="display:flex; gap:24px; font-size:14px;">
+      <a href="index.html" style="text-decoration:none; color:#666;">Home</a>
+      <a href="courses.html" style="text-decoration:none; color:#666;">Courses</a>
+      <a href="about.html" style="text-decoration:none; color:#666;">About Us</a>
+      <a href="contact.html" style="text-decoration:none; color:#111;">Contact</a>
+      <a href="login.html" style="text-decoration:none; color:#111;font-weight:bold; border-bottom:2px solid #111; padding-bottom:2px;">Login</a>
+      <a href="fees.html" style="text-decoration:none; color:#111;">Fees</a>
+    </div>
+  </div> 
+  
+  <hr> 
+  <h1>Student Enrolment Form</h1>
+   <p>Please complete the form below to enrol in your chosen course.</p>
+    <form action="#" method="post">
+         <h3>Personal Information</h3> 
+         <label for="fullname">Full Name:</label>
+         <br> <input type="text" id="fullname" name="fullname" required> <br>
+         <br> <label for="email">Email Address:</label>
+         <br> <input type="email" id="email" name="email" required> <br>
+         <br> <label for="phone">Phone Number:</label><br>
+          <input type="tel" id="phone" name="phone" required> <br>
+          <br> <h3>Course Information</h3> 
+          <label for="course">Select Your Course:</label>
+          <br> <select id="course" name="course" required>
+             <option value="">Choose a course</option> 
+             <option value="puppy">Puppy Kindergarten & Socialization</option> 
+             <option value="obedience">Basic Obedience & Manner Training</option>
+              <option value="agility">Agility Foundations & Obstacles</option> 
+              <option value="citizen">Canine Good Citizen Preparation</option> 
+              <option value="rehabilitation">Reactive Dog Rehabilitation</option>
+             <option value="tricks">Advanced Tricks & Cognitive Learning</option>
+             </select> <br>
+            
+              <br> <label for="message">Additional Information:</label><br>
+               <textarea id="message" name="message" rows="4" cols="30"></textarea>
+                <br><br> <input type="checkbox" id="terms" name="terms" required>
+                 <label for="terms">I confirm that the information provided is correct.</label> 
+                 <br><br> <button type="submit">Submit Enrolment</button> 
+                </form> 
+                
+                <br> <a href="fees.html"> <button type="button">Back to Calculate Fees</button> </a>
+
+</body>
+</html>
