@@ -8,47 +8,131 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
+
+  <!-- Header / Nav -->
   <header class="site-header">
     <nav class="container nav" aria-label="Main navigation">
-      <a class="brand" href="index.html" aria-label="Pawsitive Pet Academy home"><img src="images/pawsitive-logo.png" alt="Pawsitive Pet Academy logo"></a>
+      <a class="brand" href="index.html">
+        <img src="images/pawsitive-logo.png" alt="Pawsitive Pet Academy logo">
+      </a>
+
       <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+
       <ul class="nav-menu" id="nav-menu">
-      <li><a href="index.html">Home</a></li>
-      <li class="has-dropdown"><a href="courses.html">Courses</a><button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Show courses menu">▾</button><ul class="dropdown"><li><span class="dropdown-label">6-Month Courses</span></li><li><a href="completeDogTraining.html">Complete Dog Training</a></li><li><a href="Therapy%20and%20service%20prep.html">Therapy and Service Preparation</a></li><li><a href="Behavior%20Rehabilitation.html">Behavior Rehabilitation</a></li><li><span class="dropdown-label">6-Week Short Courses</span></li><li><a href="Puppy%20Kindergarten.html">Puppy Kindergarten</a></li><li><a href="Reliable%20Recall%20Master.html">Reliable Recall Master</a></li><li><a href="Leash%20Walking.html">Leash Walking Workshop</a></li><li><a href="courses.html"><strong>View all courses</strong></a></li></ul></li>
-      <li><a href="about.html">About Us</a></li>
-      <li><a href="contact.html" aria-current="page">Contact</a></li>
-      <li><a href="fees.html">Fees</a></li>
+        <li><a href="index.html">Home</a></li>
+
+        <!-- Courses dropdown -->
+        <li class="has-dropdown">
+          <a href="courses.html">Courses</a>
+          <button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Show courses menu">▾</button>
+          <ul class="dropdown">
+            <li><span class="dropdown-label">6-Month Courses</span></li>
+            <li><a href="completeDogTraining.html">Complete Dog Training</a></li>
+            <li><a href="Therapy%20and%20service%20prep.html">Therapy and Service Preparation</a></li>
+            <li><a href="Behavior%20Rehabilitation.html">Behavior Rehabilitation</a></li>
+
+            <li><span class="dropdown-label">6-Week Short Courses</span></li>
+            <li><a href="Puppy%20Kindergarten.html">Puppy Kindergarten</a></li>
+            <li><a href="Reliable%20Recall%20Master.html">Reliable Recall Master</a></li>
+            <li><a href="Leash%20Walking.html">Leash Walking Workshop</a></li>
+            <li><a href="courses.html"><strong>View all courses</strong></a></li>
+          </ul>
+        </li>
+
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+        <li><a href="fees.html">Fees</a></li>
       </ul>
     </nav>
   </header>
-  <main id="main">
 
+  <!-- Main content -->
+  <main id="main">
     <section class="section">
       <div class="container">
         <h1>Contact Us</h1>
-        <p>If you have any questions or inquiries, please feel free to reach out to us using the contact form below.</p>
+        <p>Got a question about your dog? Pop us a message, give us a call, or come say hi in person. We usually reply within one working day.</p>
+
+        <!-- Our contact details -->
+        <div class="contact-grid">
+          <div class="contact-card">
+            <h2>Visit Us</h2>
+            <address>
+              Pawsitive Pet Academy<br>
+              47 Umbilo Road<br>
+              Umbilo, Durban, 4001<br>
+              South Africa
+            </address>
+          </div>
+
+          <div class="contact-card">
+            <h2>Call / WhatsApp</h2>
+            <p>Phone: <a href="tel:+273155501XX">+27 31 555 01XX</a></p>
+            <p>WhatsApp: <a href="https://wa.me/278255501XX">+27 82 555 01XX</a></p>
+            <p>Alt: <a href="tel:+273155501XX">+27 31 555 01XX</a></p>
+          </div>
+
+          <div class="contact-card">
+            <h2>Email Us</h2>
+            <p><a href="mailto:hello@pawsitive.co.za">hello@pawsitive.co.za</a></p>
+            <p><a href="mailto:bookings@pawsitive.co.za">bookings@pawsitive.co.za</a></p>
+          </div>
+
+          <div class="contact-card">
+            <h2>Opening Hours</h2>
+            <p><strong>Mon - Fri:</strong> 08:00 - 17:30</p>
+            <p><strong>Sat:</strong> 08:00 - 13:30</p>
+            <p><strong>Sun:</strong> Closed</p>
+          </div>
+        </div>
+
+        <!-- Contact form -->
         <div class="form-card">
           <div class="form-status" role="status" aria-live="polite"></div>
+
           <form id="contact-form" novalidate>
-            <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error"><span class="error-msg" id="name-error"></span></div>
-            <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error"><span class="error-msg" id="email-error"></span></div>
-            <div class="field"><label for="topic">Topic</label>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error">
+              <span class="error-msg" id="name-error"></span>
+            </div>
+
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error">
+              <span class="error-msg" id="email-error"></span>
+            </div>
+
+            <div class="field">
+              <label for="topic">Topic</label>
               <select id="topic" name="topic" aria-describedby="topic-error">
                 <option value="">Choose a topic</option>
                 <option value="courses">Course information</option>
                 <option value="fees">Fees and payment</option>
                 <option value="enrolment">Enrolment help</option>
                 <option value="other">Something else</option>
-              </select><span class="error-msg" id="topic-error"></span></div>
-            <div class="field"><label for="message">Message <span class="hint">(at least 10 characters)</span></label><textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea><span class="error-msg" id="message-error"></span></div>
+              </select>
+              <span class="error-msg" id="topic-error"></span>
+            </div>
+
+            <div class="field">
+              <label for="message">Message <span class="hint">(at least 10 characters)</span></label>
+              <textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea>
+              <span class="error-msg" id="message-error"></span>
+            </div>
+
             <button class="btn" type="submit">Send Message</button>
           </form>
         </div>
+
       </div>
     </section>
   </main>
+
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <span>© <span id="year">2026</span> Pawsitive Pet Academy · Durban, South Africa</span>
