@@ -1,60 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="description" content="Pawsitive Pet Academy – professional dog training courses in Durban, South Africa.">
+  <title>Complete Dog Training | Pawsitive Pet Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-
-<a href="courses.html">
-  <button>Back to Courses</button>
-</a>
-
-<!-- NAVBAR -->
-<div style="display:flex; justify-content:space-between; align-items:center; padding:16px 40px; border-bottom:1px solid #e5e7eb;">
-    <div style="display:flex; align-items:center; gap:8px; font-weight:bold;">
-      <div style="width:28px; height:28px; border:1px solid #ccc; border-radius:6px; display:flex; align-items:center; justify-content:center;">🐾</div>
-      Pawsitive Pet Academy
-    </div>
-    <div style="display:flex; gap:24px; font-size:14px;">
-      <a href="index.html" style="text-decoration:none; color:#666;">Home</a>
-      <a href="courses.html" style="text-decoration:none; color:#111; font-weight:bold; border-bottom:2px solid #111; padding-bottom:2px;">Courses</a>
-      <a href="about.html" style="text-decoration:none; color:#666;">About Us</a>
-      <a href="contact.html" style="text-decoration:none; color:#666;">Contact</a>
-      <a href="login.html" style="text-decoration:none; color:#666;">Login</a>
-      <a href="fees.html" style="text-decoration:none; color:#666;">Fees</a>
-    </div>
-  </div>
-
-
-<table width="100%">
-  <tr>
-    
-    <td width="50%" valign="top" style="padding-top:10px;">
-      <div style="border:1px solid #e5e7eb; display:inline-block; padding:4px 8px;">6 MONTHS</div>
-      <h1>Canine Obedience<br>Training</h1>
-
-      <h3>WHAT YOU'LL LEARN</h3>
-      <ul>
-        <li>Basic Commands (Sit, Stay, Come)</li>
-        <li>Advanced Training Techniques</li>
-        <li>Behavior Modification</li>
-        <li>Communication and Bonding</li>
-        <li>Trick Training</li>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Pawsitive Pet Academy home"><img src="images/pawsitive-logo.png" alt="Pawsitive Pet Academy logo"></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown"><a href="courses.html" aria-current="page">Courses</a><button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Show courses menu">▾</button><ul class="dropdown"><li><span class="dropdown-label">6-Month Courses</span></li><li><a href="completeDogTraining.html">Complete Dog Training</a></li><li><a href="Therapy%20and%20service%20prep.html">Therapy and Service Preparation</a></li><li><a href="Behavior%20Rehabilitation.html">Behavior Rehabilitation</a></li><li><span class="dropdown-label">6-Week Short Courses</span></li><li><a href="Puppy%20Kindergarten.html">Puppy Kindergarten</a></li><li><a href="Reliable%20Recall%20Master.html">Reliable Recall Master</a></li><li><a href="Leash%20Walking.html">Leash Walking Workshop</a></li><li><a href="courses.html"><strong>View all courses</strong></a></li></ul></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="fees.html">Fees</a></li>
       </ul>
+    </nav>
+  </header>
+  <main id="main">
 
-      <div style="border:1px solid #ccc; padding:20px; width:200px;">
-        <h2>R8,500</h2>
-        <button style="width:100%; background:black; color:white; padding:10px;">Select This Course</button>
+    <section class="section">
+      <div class="container">
+        <a class="back-link" href="courses.html">← Back to Courses</a>
+        <div class="hero-grid" style="margin-top:20px">
+          <div>
+            <span class="badge">6 MONTHS</span>
+            <h1>Complete Dog Training</h1>
+            <h2 style="font-size:1.1rem">What you'll learn</h2>
+            <ul class="learn-list">
+          <li>Basic Commands (Sit, Stay, Come)</li>
+          <li>Advanced Training Techniques</li>
+          <li>Behavior Modification</li>
+          <li>Communication and Bonding</li>
+          <li>Trick Training</li>
+            </ul>
+            <div class="table-wrap" style="margin:20px 0">
+              <table class="data" style="min-width:0">
+                <caption>Course details</caption>
+                <tbody>
+                  <tr><th scope="row">Duration</th><td>6 months</td></tr>
+                  <tr><th scope="row">Focus</th><td>Obedience & behaviour</td></tr>
+                  <tr><th scope="row">Fee</th><td>R8,500</td></tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="price-card">
+              <div class="price">R8,500</div>
+              <a class="btn" href="enrolment.html?course=complete">Select This Course</a>
+            </div>
+          </div>
+          <img class="media-img" src="images/dog.avif" alt="Complete Dog Training">
+        </div>
       </div>
-    </td>
-
-    
-    <td width="50%" valign="top" align="left">
-      <img src="images/dog.avif" width="500">
-    </td>
-  </tr>
-</table>
-
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year">2026</span> Pawsitive Pet Academy · Durban, South Africa</span>
+      <span><a href="contact.html">Contact</a> · <a href="fees.html">Fees</a> · <a href="courses.html">Courses</a></span>
+    </div>
+  </footer>
 </body>
 </html>

@@ -1,107 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>OurCourses - Pawsitive Pet Academy</title>  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pawsitive Pet Academy – professional dog training courses in Durban, South Africa.">
+  <title>Our Courses | Pawsitive Pet Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    
-  <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 40px; border-bottom:1px solid #e5e7eb;">
-    <div style="display:flex; align-items:center; gap:8px; font-weight:bold;">
-      <div style="width:28px; height:28px; border:1px solid #ccc; border-radius:6px; display:flex; align-items:center; justify-content:center;">🐾</div>
-      Pawsitive Pet Academy
-    </div>
-    <div style="display:flex; gap:24px; font-size:14px;">
-      <a href="index.html" style="text-decoration:none; color:#666;">Home</a>
-      <a href="courses.html" style="text-decoration:none; color:#111; font-weight:bold; border-bottom:2px solid #111; padding-bottom:2px;">Courses</a>
-      <a href="about.html" style="text-decoration:none; color:#666;">About Us</a>
-      <a href="contact.html" style="text-decoration:none; color:#666;">Contact</a>
-      <a href="login.html" style="text-decoration:none; color:#666;">Login</a>
-      <a href="fees.html" style="text-decoration:none; color:#666;">Fees</a>
-    </div>
-  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Pawsitive Pet Academy home"><img src="images/pawsitive-logo.png" alt="Pawsitive Pet Academy logo"></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown"><a href="courses.html" aria-current="page">Courses</a><button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Show courses menu">▾</button><ul class="dropdown"><li><span class="dropdown-label">6-Month Courses</span></li><li><a href="completeDogTraining.html">Complete Dog Training</a></li><li><a href="Therapy%20and%20service%20prep.html">Therapy and Service Preparation</a></li><li><a href="Behavior%20Rehabilitation.html">Behavior Rehabilitation</a></li><li><span class="dropdown-label">6-Week Short Courses</span></li><li><a href="Puppy%20Kindergarten.html">Puppy Kindergarten</a></li><li><a href="Reliable%20Recall%20Master.html">Reliable Recall Master</a></li><li><a href="Leash%20Walking.html">Leash Walking Workshop</a></li><li><a href="courses.html"><strong>View all courses</strong></a></li></ul></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
 
-    <table width="80%" align="center" cellpadding="0" cellpadding="30">
-        <tr>
-            <td width="50"  valign="middle">
-                <h1>Our Courses</h1>
-                <br>
-                
-                <br>
-                
-            </td>
+    <section class="section">
+      <div class="container">
+        <p class="eyebrow">Our training portfolio</p>
+        <h1>Our Courses</h1>
 
-            <td width="50" valign="middle">
-               
-            </td>
-        </tr>  
-        <table width="85%" align="center">
-    <tr>
-        <td>
-            <h3>🐾 Pawsitive Pet Academy</h3>
-        </td>
-    </tr>
-</table>
-
-<br>
-<table width="85%" align="center">
-
-    <tr bgcolor="#f2f2f2">
-        <td colspan="3">
-            <b>OUR TRAINING PORTFOLIO</b>
-            <h1>Our Courses</h1>
-        </td>
-    </tr>
-
-    <tr>
-        <td colspan="3">
-            <h2>6-Month Courses</h2>
-        </td>
-    </tr>
-
-    <tr>
-        <td bgcolor="#f2f2f2" width="33%">
+        <h2>6-Month Courses</h2>
+        <div class="grid grid--3">
+        <article class="card">
+          <img src="images/dog.avif" alt="Complete Dog Training course" loading="lazy">
+          <div class="card-body">
+            <span class="badge">6 MONTHS</span>
             <h3>Complete Dog Training</h3>
             <p>Learn the fundamentals of dog training, including obedience, behavior modification, and positive reinforcement techniques.</p>
-            <img src="images/dog.avif" width="100%" height="auto"; object-fit: cover;>
-            <a href="completeDogTraining.html">View Course</a>
-        </td>
-        <td bgcolor="#f2f2f2" width="33%">
-            <h3>Therapy and service prep</h3>
-            <p>Discover effective methods for training cats, addressing common behavioral issues, and enhancing the bond with your feline friend.</p>
-            <img src="images/dog theraphy.webp" width="100%" height="auto"; object-fit: cover;>
-            <a href="Therapy and service prep.html">View Course</a>
-        </td>
-        <td bgcolor="#f2f2f2" width="33%">
+            <a class="btn" href="completeDogTraining.html">View Course</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/dog%20theraphy.webp" alt="Therapy and Service Preparation course" loading="lazy">
+          <div class="card-body">
+            <span class="badge">6 MONTHS</span>
+            <h3>Therapy and Service Preparation</h3>
+            <p>Prepare dogs for therapy visits and assistance work, with a focus on temperament, task training and ethical practice.</p>
+            <a class="btn" href="Therapy%20and%20service%20prep.html">View Course</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/dog%20rehabilitation.jpg" alt="Behavior Rehabilitation course" loading="lazy">
+          <div class="card-body">
+            <span class="badge">6 MONTHS</span>
             <h3>Behavior Rehabilitation</h3>
-            <p>Explore advanced techniques for rehabilitating dogs and cats with behavioral issues, focusing on their unique needs and behaviors.</p>
-            <img src="images/dog rehabilitation.jpg" width="100%" height="auto"; object-fit: cover;>
-            <a href="Behavior Rehabilitation.html">View Course</a>
-        </td>
+            <p>Explore advanced techniques for rehabilitating dogs with behavioral issues, focusing on their unique needs and triggers.</p>
+            <a class="btn" href="Behavior%20Rehabilitation.html">View Course</a>
+          </div>
+        </article>
+        </div>
 
-        <tr>
-        <td colspan="3">
-            <h2>6-weeks Short Courses</h2>
-        </td>
-    </tr>
-
-    <tr>
-        <td bgcolor="#f2f2f2" width="33%">
+        <h2 style="margin-top:48px">6-Week Short Courses</h2>
+        <div class="grid grid--3">
+        <article class="card">
+          <img src="images/puppy%20training.jpeg" alt="Puppy Kindergarten course" loading="lazy">
+          <div class="card-body">
+            <span class="badge">6 WEEKS</span>
             <h3>Puppy Kindergarten</h3>
             <p>Introduce your young pup to the world of training in a fun and social environment.</p>
-            <img src="images/puppy training.jpeg" style="width: 100%; height: auto; object-fit: cover;">
-            <a href="Puppy Kindergarten.html">View Course</a>
-        </td>
-        <td bgcolor="#f2f2f2" width="33%">
+            <a class="btn" href="Puppy%20Kindergarten.html">View Course</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/recall%20master.jpeg" alt="Reliable Recall Master course" loading="lazy">
+          <div class="card-body">
+            <span class="badge">6 WEEKS</span>
             <h3>Reliable Recall Master</h3>
             <p>Master the art of training your dog to reliably come when called, even in distracting environments.</p>
-            <img src="images/recall master.jpeg" style="width: 100%; height: auto; object-fit: cover;">
-            <a href="Reliable Recall Master.html">View Course</a>
-        </td>
-        <td bgcolor="#f2f2f2" width="33%">
+            <a class="btn" href="Reliable%20Recall%20Master.html">View Course</a>
+          </div>
+        </article>
+        <article class="card">
+          <img src="images/leash%20training.jpeg" alt="Leash Walking Workshop course" loading="lazy">
+          <div class="card-body">
+            <span class="badge">6 WEEKS</span>
             <h3>Leash Walking Workshop</h3>
             <p>Learn effective techniques for teaching your dog to walk politely on a leash, reducing pulling and improving control.</p>
-            <img src="images/leash training.jpeg" style="width: 100%; height: auto; object-fit: cover;">
-            <a href="Leash Walking.html">View Course</a>
-        </td>
+            <a class="btn" href="Leash%20Walking.html">View Course</a>
+          </div>
+        </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <h2>Compare all courses</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <caption>Course comparison</caption>
+          <thead><tr><th scope="col">Course</th><th scope="col">Duration</th><th scope="col">Focus</th><th scope="col" class="num">Fee</th></tr></thead>
+          <tbody>
+          <tr><td><a href="completeDogTraining.html">Complete Dog Training</a></td><td>6 months</td><td>Obedience & behaviour</td><td class="num">R8,500</td></tr>
+          <tr><td><a href="Therapy%20and%20service%20prep.html">Therapy and Service Preparation</a></td><td>6 months</td><td>Therapy & service work</td><td class="num">R8,500</td></tr>
+          <tr><td><a href="Behavior%20Rehabilitation.html">Behavior Rehabilitation</a></td><td>6 months</td><td>Reactivity & confidence</td><td class="num">R8,500</td></tr>
+          <tr><td><a href="Puppy%20Kindergarten.html">Puppy Kindergarten</a></td><td>6 weeks</td><td>Puppy socialisation</td><td class="num">R2,500</td></tr>
+          <tr><td><a href="Reliable%20Recall%20Master.html">Reliable Recall Master</a></td><td>6 weeks</td><td>Recall</td><td class="num">R2,500</td></tr>
+          <tr><td><a href="Leash%20Walking.html">Leash Walking Workshop</a></td><td>6 weeks</td><td>Loose-lead walking</td><td class="num">R2,500</td></tr>
+          </tbody>
+        </table>
+      </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year">2026</span> Pawsitive Pet Academy · Durban, South Africa</span>
+      <span><a href="contact.html">Contact</a> · <a href="fees.html">Fees</a> · <a href="courses.html">Courses</a></span>
+    </div>
+  </footer>
 </body>
 </html>

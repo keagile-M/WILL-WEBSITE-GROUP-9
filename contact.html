@@ -1,40 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pawsitive Pet Academy – professional dog training courses in Durban, South Africa.">
+  <title>Contact Us | Pawsitive Pet Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Pawsitive Pet Academy home"><img src="images/pawsitive-logo.png" alt="Pawsitive Pet Academy logo"></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown"><a href="courses.html">Courses</a><button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Show courses menu">▾</button><ul class="dropdown"><li><span class="dropdown-label">6-Month Courses</span></li><li><a href="completeDogTraining.html">Complete Dog Training</a></li><li><a href="Therapy%20and%20service%20prep.html">Therapy and Service Preparation</a></li><li><a href="Behavior%20Rehabilitation.html">Behavior Rehabilitation</a></li><li><span class="dropdown-label">6-Week Short Courses</span></li><li><a href="Puppy%20Kindergarten.html">Puppy Kindergarten</a></li><li><a href="Reliable%20Recall%20Master.html">Reliable Recall Master</a></li><li><a href="Leash%20Walking.html">Leash Walking Workshop</a></li><li><a href="courses.html"><strong>View all courses</strong></a></li></ul></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
 
-    <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 40px; border-bottom:1px solid #e5e7eb;">
-    <div style="display:flex; align-items:center; gap:8px; font-weight:bold;">
-      <div style="width:28px; height:28px; border:1px solid #ccc; border-radius:6px; display:flex; align-items:center; justify-content:center;">🐾</div>
-      Pawsitive Pet Academy
+    <section class="section">
+      <div class="container">
+        <h1>Contact Us</h1>
+        <p>If you have any questions or inquiries, please feel free to reach out to us using the contact form below.</p>
+        <div class="form-card">
+          <div class="form-status" role="status" aria-live="polite"></div>
+          <form id="contact-form" novalidate>
+            <div class="field"><label for="name">Name</label><input type="text" id="name" name="name" autocomplete="name" aria-describedby="name-error"><span class="error-msg" id="name-error"></span></div>
+            <div class="field"><label for="email">Email</label><input type="email" id="email" name="email" autocomplete="email" aria-describedby="email-error"><span class="error-msg" id="email-error"></span></div>
+            <div class="field"><label for="topic">Topic</label>
+              <select id="topic" name="topic" aria-describedby="topic-error">
+                <option value="">Choose a topic</option>
+                <option value="courses">Course information</option>
+                <option value="fees">Fees and payment</option>
+                <option value="enrolment">Enrolment help</option>
+                <option value="other">Something else</option>
+              </select><span class="error-msg" id="topic-error"></span></div>
+            <div class="field"><label for="message">Message <span class="hint">(at least 10 characters)</span></label><textarea id="message" name="message" rows="5" aria-describedby="message-error"></textarea><span class="error-msg" id="message-error"></span></div>
+            <button class="btn" type="submit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year">2026</span> Pawsitive Pet Academy · Durban, South Africa</span>
+      <span><a href="contact.html">Contact</a> · <a href="fees.html">Fees</a> · <a href="courses.html">Courses</a></span>
     </div>
-    <div style="display:flex; gap:24px; font-size:14px;">
-      <a href="index.html" style="text-decoration:none; color:#666;">Home</a>
-      <a href="courses.html" style="text-decoration:none; color:#666;">Courses</a>
-      <a href="about.html" style="text-decoration:none; color:#666;">About Us</a>
-      <a href="contact.html" style="text-decoration:none; color:#111;font-weight:bold; border-bottom:2px solid #111; padding-bottom:2px;">Contact</a>
-      <a href="login.html" style="text-decoration:none; color:#666;">Login</a>
-      <a href="fees.html" style="text-decoration:none; color:#666;">Fees</a>
-    </div>
-  </div>
-
-    <h1>Contact Us</h1>
-    <p>If you have any questions or inquiries, please feel free to reach out to us using the contact form below or through the provided contact information.</p>
-    <form action="submit_contact.php" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br><br>
-
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br><br>
-
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br><br>
-
-        <input type="submit" value="Submit">
-    </form>
+  </footer>
 </body>
 </html>

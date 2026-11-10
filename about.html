@@ -1,62 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pawsitive Pet Academy – professional dog training courses in Durban, South Africa.">
+  <title>About Us | Pawsitive Pet Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-   
-  <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 40px; border-bottom:1px solid #e5e7eb;">
-    <div style="display:flex; align-items:center; gap:8px; font-weight:bold;">
-      <div style="width:28px; height:28px; border:1px solid #ccc; border-radius:6px; display:flex; align-items:center; justify-content:center;">🐾</div>
-      Pawsitive Pet Academy
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Pawsitive Pet Academy home"><img src="images/pawsitive-logo.png" alt="Pawsitive Pet Academy logo"></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html">Home</a></li>
+      <li class="has-dropdown"><a href="courses.html">Courses</a><button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Show courses menu">▾</button><ul class="dropdown"><li><span class="dropdown-label">6-Month Courses</span></li><li><a href="completeDogTraining.html">Complete Dog Training</a></li><li><a href="Therapy%20and%20service%20prep.html">Therapy and Service Preparation</a></li><li><a href="Behavior%20Rehabilitation.html">Behavior Rehabilitation</a></li><li><span class="dropdown-label">6-Week Short Courses</span></li><li><a href="Puppy%20Kindergarten.html">Puppy Kindergarten</a></li><li><a href="Reliable%20Recall%20Master.html">Reliable Recall Master</a></li><li><a href="Leash%20Walking.html">Leash Walking Workshop</a></li><li><a href="courses.html"><strong>View all courses</strong></a></li></ul></li>
+      <li><a href="about.html" aria-current="page">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+
+    <section class="section">
+      <div class="container hero-grid">
+        <img class="media-img" src="images/about%20us.jpeg" alt="The Pawsitive Pet Academy team with dogs">
+        <div>
+          <p class="eyebrow">About us</p>
+          <h1>Leading Pet Education in South Africa</h1>
+          <p>Pawsitive Pet Academy was established in 2023 and offers training courses in Durban. Hundreds of pet owners and aspiring pet care professionals have completed both the six-month Professional Development Programmes and the six-week Practical Skills Courses.</p>
+          <div class="table-wrap">
+            <table class="data" style="min-width:0">
+              <caption>At a glance</caption>
+              <tbody>
+                <tr><th scope="row">Established</th><td>2023</td></tr>
+                <tr><th scope="row">Location</th><td>Durban, South Africa</td></tr>
+                <tr><th scope="row">Programmes</th><td>Six-month Professional Development Programmes</td></tr>
+                <tr><th scope="row">Short courses</th><td>Six-week Practical Skills Courses</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="purpose">
+      <div class="container">
+        <p class="eyebrow">Our core purpose</p>
+        <h2>“To cultivate peaceful, confident, and responsive relationships between pets and their families through kind, accessible, and structured pet education.”</h2>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year">2026</span> Pawsitive Pet Academy · Durban, South Africa</span>
+      <span><a href="contact.html">Contact</a> · <a href="fees.html">Fees</a> · <a href="courses.html">Courses</a></span>
     </div>
-    <div style="display:flex; gap:24px; font-size:14px;">
-      <a href="index.html" style="text-decoration:none; color:#666;">Home</a>
-      <a href="courses.html" style="text-decoration:none; color:#666;">Courses</a>
-      <a href="about.html" style="text-decoration:none; color:#111;font-weight:bold; border-bottom:2px solid #111; padding-bottom:2px;">About Us</a>
-      <a href="contact.html" style="text-decoration:none; color:#111;">Contact</a>
-      <a href="login.html" style="text-decoration:none; color:#666;">Login</a>
-      <a href="fees.html" style="text-decoration:none; color:#666;">Fees</a>
-    </div>
-  </div>
-
-
-<table width="100%" cellpadding="20">
-  <tr>
-    <!-- LEFT - PHOTO BOX -->
-    <td width="50%" valign="top" align="left">
-      <img src="images/about us.jpeg" width="500">
-    </td>
-    
-
-    
-    <td width="60%" valign="top">
-      <h3>Leading Pet Education in South Africa</h3>
-      <p>
-        <br> Pawsitive Pet Academy was established in 2023 and offers training courses in Durban. Hundreds of pet owners and
-          aspiring pet care professionals have completed both the six-month Professional Development Programmes and the 
-          six-week Practical Skills Courses.<br>  
-          
-
-      </p>
-    </td>
-  </tr>
-</table>
-
-<br><br>
-
-
-<table width="100%" bgcolor="#eeeeee" cellpadding="20">
-  <tr>
-    <td>
-      <small><b>OUR CORE PURPOSE</b></small>
-      <h2>"To cultivate peaceful, confident, and responsive relationships between pets and their families through kind, accessible, and structured pet education."</h2>
-    </td>
-  </tr>
-</table>
-
-
+  </footer>
 </body>
 </html>

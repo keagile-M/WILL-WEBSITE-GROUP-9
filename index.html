@@ -1,38 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pawsitive Pet Academy – professional dog training courses in Durban, South Africa.">
+  <title>Home | Pawsitive Pet Academy</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-    <!-- NAVBAR -->
-  <div style="display:flex; justify-content:space-between; align-items:center; padding:16px 40px; border-bottom:1px solid #e5e7eb;">
-    <div style="display:flex; align-items:center; gap:8px; font-weight:bold;">
-      <div style="width:28px; height:28px; border:1px solid #ccc; border-radius:6px; display:flex; align-items:center; justify-content:center;">🐾</div>
-      Pawsitive Pet Academy
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="brand" href="index.html" aria-label="Pawsitive Pet Academy home"><img src="images/pawsitive-logo.png" alt="Pawsitive Pet Academy logo"></a>
+      <button class="nav-toggle" type="button" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">☰</button>
+      <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li class="has-dropdown"><a href="courses.html">Courses</a><button class="dropdown-toggle" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Show courses menu">▾</button><ul class="dropdown"><li><span class="dropdown-label">6-Month Courses</span></li><li><a href="completeDogTraining.html">Complete Dog Training</a></li><li><a href="Therapy%20and%20service%20prep.html">Therapy and Service Preparation</a></li><li><a href="Behavior%20Rehabilitation.html">Behavior Rehabilitation</a></li><li><span class="dropdown-label">6-Week Short Courses</span></li><li><a href="Puppy%20Kindergarten.html">Puppy Kindergarten</a></li><li><a href="Reliable%20Recall%20Master.html">Reliable Recall Master</a></li><li><a href="Leash%20Walking.html">Leash Walking Workshop</a></li><li><a href="courses.html"><strong>View all courses</strong></a></li></ul></li>
+      <li><a href="about.html">About Us</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Dog training in Durban</p>
+          <h1>Welcome to Pawsitive Pet Academy!</h1>
+          <p class="lead">Kind, structured pet education that builds peaceful, confident and responsive relationships between dogs and their families.</p>
+          <div class="btn-row">
+            <a class="btn" href="courses.html">Explore Courses</a>
+            <a class="btn btn--outline" href="fees.html">Calculate Fees</a>
+          </div>
+        </div>
+        <img src="images/dog.avif" alt="A happy dog ready for training">
+      </div>
+    </section>
+
+    <section class="section section--white">
+      <div class="container">
+        <div class="grid grid--3">
+          <div class="feature"><div class="icon" aria-hidden="true">🎓</div><h3>Professional Programmes</h3><p>Six-month courses for owners and aspiring pet care professionals.</p></div>
+          <div class="feature"><div class="icon" aria-hidden="true">⏱️</div><h3>Practical Short Courses</h3><p>Six-week workshops focused on one skill at a time.</p></div>
+          <div class="feature"><div class="icon" aria-hidden="true">💚</div><h3>Positive Reinforcement</h3><p>Reward-based methods that strengthen the bond with your dog.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <h2>Our courses</h2>
+      <div class="table-wrap">
+        <table class="data">
+          <caption>Programme at a glance</caption>
+          <thead><tr><th scope="col">Course</th><th scope="col">Duration</th><th scope="col">Focus</th><th scope="col" class="num">Fee</th></tr></thead>
+          <tbody>
+          <tr><td><a href="completeDogTraining.html">Complete Dog Training</a></td><td>6 months</td><td>Obedience & behaviour</td><td class="num">R8,500</td></tr>
+          <tr><td><a href="Therapy%20and%20service%20prep.html">Therapy and Service Preparation</a></td><td>6 months</td><td>Therapy & service work</td><td class="num">R8,500</td></tr>
+          <tr><td><a href="Behavior%20Rehabilitation.html">Behavior Rehabilitation</a></td><td>6 months</td><td>Reactivity & confidence</td><td class="num">R8,500</td></tr>
+          <tr><td><a href="Puppy%20Kindergarten.html">Puppy Kindergarten</a></td><td>6 weeks</td><td>Puppy socialisation</td><td class="num">R2,500</td></tr>
+          <tr><td><a href="Reliable%20Recall%20Master.html">Reliable Recall Master</a></td><td>6 weeks</td><td>Recall</td><td class="num">R2,500</td></tr>
+          <tr><td><a href="Leash%20Walking.html">Leash Walking Workshop</a></td><td>6 weeks</td><td>Loose-lead walking</td><td class="num">R2,500</td></tr>
+          </tbody>
+        </table>
+      </div>
+        <div class="btn-row"><a class="btn btn--sage" href="enrolment.html">Enrol Now</a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container">
+      <span>© <span id="year">2026</span> Pawsitive Pet Academy · Durban, South Africa</span>
+      <span><a href="contact.html">Contact</a> · <a href="fees.html">Fees</a> · <a href="courses.html">Courses</a></span>
     </div>
-
-    <div style="display:flex; gap:24px; font-size:14px;">
-      <a href="index.html" style="text-decoration:none; color:#111;font-weight:bold; border-bottom:2px solid #111; padding-bottom:2px">Home</a>
-      <a href="courses.html" style="text-decoration:none; color:#666; ">Courses</a>
-      <a href="about.html" style="text-decoration:none; color:#666;">About Us</a>
-      <a href="contact.html" style="text-decoration:none; color:#666;">Contact</a>
-      <a href="login.html" style="text-decoration:none; color:#666;">Login</a>
-      <a href="fees.html" style="text-decoration:none; color:#666;">Fees</a>
-    </div>
-  </div>
-
- <table width="80%" align="center" cellpadding="0" cellpadding="30">
-    <tr>
-        <td width="50"  valign="middle">
-            <h1>Welcome to Pawsitive Pet Axademy!</h1> 
-        </td>
-
-        <td width="50" valign="middle">
-            <img src="images/dog.avif"  width="100%" height="400"> 
-        </td>
-    </tr>
-</table>
+  </footer>
 </body>
 </html>
